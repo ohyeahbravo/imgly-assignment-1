@@ -1,30 +1,44 @@
-# React + TypeScript + Vite
+# JSON Interaction Tool
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This web app is a simple tool to display a fetched JSON data and let users interact with the nodes, built with React, Typescript and Vite.
 
-Currently, two official plugins are available:
+_It has been implemented as a solution to Exercise 1 of the IMG.LY take-home assignment._
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Featrues
 
-## Expanding the ESLint configuration
+- Toggle Highlight on click, including its sub-tree.
+- Toggle expand/collapse status of a tree upon clicking on a chevron icon.
+- Fetch and display additionally fetched data upon clicking on a leaf node. (Hint: Look for a leaf icon.)
+- Drag and drop a node to change the structure of the tree.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Setup
 
-- Configure the top-level `parserOptions` property like this:
+### Prerequisites
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json', './tsconfig.app.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+- Node.js 18+ or 20+.
+
+### Insructions
+
+- Clone the project.
+- Open the terminal.
+- Move to the project directory.
+
+```
+cd imgly-assignment-1
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- Install dependencies.
+
+```
+npm run install
+```
+
+- Compile and run locally.
+
+```
+npm run dev
+```
+
+## Limitation
+
+A node can't be moved under any of its descendants. Probably more...
