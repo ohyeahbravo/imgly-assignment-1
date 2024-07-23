@@ -11,7 +11,9 @@ _It has been implemented as a solution to Exercise 1 of the IMG.LY take-home ass
 - Fetch and display additionally fetched data upon clicking on a leaf node. (Hint: Look for a leaf icon.)
 - Drag and drop a node to change the structure of the tree.
 
-## Setup
+## Screenshot
+
+![screenshot](screenshot.gif)
 
 ### Prerequisites
 
