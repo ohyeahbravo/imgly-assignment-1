@@ -25,7 +25,7 @@ function App() {
   return (
     <div className="w-screen max-w-lg">
       <div className="mx-4 my-4">
-        <Node nodeData={root} isRoot={true} />
+        <Node nodeData={root} isRoot={true} selected={false} />
       </div>
     </div>
   );
